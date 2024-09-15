@@ -1,0 +1,3 @@
+roses are red
+sky is blue
+syntax error in line 32
