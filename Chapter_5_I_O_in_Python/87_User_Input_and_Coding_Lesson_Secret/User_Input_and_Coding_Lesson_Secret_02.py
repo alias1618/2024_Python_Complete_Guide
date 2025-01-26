@@ -1,0 +1,5 @@
+user_input = input("How old are you?")
+user_address = input("Where do you live?")
+print("---------------------")
+print(user_input)
+print(type(user_input))
