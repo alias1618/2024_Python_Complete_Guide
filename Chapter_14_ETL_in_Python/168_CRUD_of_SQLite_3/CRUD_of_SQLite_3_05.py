@@ -1,0 +1,12 @@
+import sqlite3
+
+conn = sqlite3.connect("Chapter_14_ETL_in_Python/168_CRUD_of_SQLite_3/datafile_04.db")
+cursor = conn.cursor()
+
+cursor.execute("""Delete from people where name='Grace'""")
+
+result = cursor.execute("select * from people")
+print(result.fetchall())
+
+conn.commit()
+conn.close()
